@@ -1,6 +1,8 @@
 # Visualización de la PEC3
 Se procede a adjuntar todos los archivos utilizados para realizar las visualizaciones del diagrama de dispersión o scatterplot y diagrama de velas o candlestick en la presente plataforma de Github. Además, se adjuntaran los archivos adicionales utilizados como el código de Rstudio y los archivos excels para importar los datos en Tableau. 
 
+Los archivos con el formato .xlxs pertenecen a los archivos de excel, con el formato .twb a los archivos de Tableau y con el formato .Rmd al archivo de Rstudio.
+
 **Código implementado en Rstudio para la extracción de datos:**
 
 Número de reservas en el Hotel resort
