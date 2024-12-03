@@ -1,0 +1,370 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='adr_hotel_city (adr_hotel_city)' inline='true' name='federated.1xgobu91umqybw15oq1uq1dimdp8' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='adr_hotel_city' name='excel-direct.1iuu95y1vuajbd1fc2doh0hc9dp0'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/ruben/Desktop/UOC/ASIGNATURAS OBLIGATORIAS/M2.859 - Visualización de datos/PEC3/adr_hotel_city.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1iuu95y1vuajbd1fc2doh0hc9dp0' name='adr_hotel_city' table='[adr_hotel_city$]' type='table'>
+          <columns gridOrigin='A1:D794:no:A1:D794:0' header='yes' outcome='6'>
+            <column datatype='integer' name='arrival_date_year' ordinal='0' />
+            <column datatype='string' name='arrival_date_month' ordinal='1' />
+            <column datatype='integer' name='arrival_date_day_of_month' ordinal='2' />
+            <column datatype='real' name='media_adr_1' ordinal='3' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[adr_hotel_city]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:D794:no:A1:D794:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>arrival_date_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[arrival_date_year]</local-name>
+            <parent-name>[adr_hotel_city]</parent-name>
+            <remote-alias>arrival_date_year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[adr!hotel!city_41C45A50871B4E50B6D7A549F1C99F44]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>arrival_date_month</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[arrival_date_month]</local-name>
+            <parent-name>[adr_hotel_city]</parent-name>
+            <remote-alias>arrival_date_month</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[adr!hotel!city_41C45A50871B4E50B6D7A549F1C99F44]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>arrival_date_day_of_month</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[arrival_date_day_of_month]</local-name>
+            <parent-name>[adr_hotel_city]</parent-name>
+            <remote-alias>arrival_date_day_of_month</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[adr!hotel!city_41C45A50871B4E50B6D7A549F1C99F44]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>media_adr_1</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[media_adr_1]</local-name>
+            <parent-name>[adr_hotel_city]</parent-name>
+            <remote-alias>media_adr_1</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[adr!hotel!city_41C45A50871B4E50B6D7A549F1C99F44]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='adr_hotel_city' datatype='table' name='[__tableau_internal_object_id__].[adr!hotel!city_41C45A50871B4E50B6D7A549F1C99F44]' role='measure' type='quantitative' />
+      <column caption='Arrival Date Day Of Month' datatype='integer' name='[arrival_date_day_of_month]' role='dimension' type='quantitative' />
+      <column caption='Arrival Date Month' datatype='string' name='[arrival_date_month]' role='dimension' type='nominal' />
+      <column caption='Arrival Date Year' datatype='integer' name='[arrival_date_year]' role='dimension' type='quantitative' />
+      <column caption='Media Adr 1' datatype='real' name='[media_adr_1]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;España&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='adr_hotel_city' id='adr!hotel!city_41C45A50871B4E50B6D7A549F1C99F44'>
+            <properties context=''>
+              <relation connection='excel-direct.1iuu95y1vuajbd1fc2doh0hc9dp0' name='adr_hotel_city' table='[adr_hotel_city$]' type='table'>
+                <columns gridOrigin='A1:D794:no:A1:D794:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='arrival_date_year' ordinal='0' />
+                  <column datatype='string' name='arrival_date_month' ordinal='1' />
+                  <column datatype='integer' name='arrival_date_day_of_month' ordinal='2' />
+                  <column datatype='real' name='media_adr_1' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name=' Candlestick chart adr City Hotel'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontname='Calibri' fontsize='14'>&lt;</run>
+            <run fontname='Calibri' fontsize='14'>Sheet Name</run>
+            <run fontname='Calibri' fontsize='14'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='adr_hotel_city (adr_hotel_city)' name='federated.1xgobu91umqybw15oq1uq1dimdp8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1xgobu91umqybw15oq1uq1dimdp8'>
+            <column caption='Arrival Date Month' datatype='string' name='[arrival_date_month]' role='dimension' type='nominal' />
+            <column caption='Arrival Date Year' datatype='integer' name='[arrival_date_year]' role='dimension' type='quantitative' />
+            <column caption='Media Adr 1' datatype='real' name='[media_adr_1]' role='measure' type='quantitative' />
+            <column-instance column='[arrival_date_month]' derivation='None' name='[none:arrival_date_month:nk]' pivot='key' type='nominal' />
+            <column-instance column='[arrival_date_year]' derivation='None' name='[none:arrival_date_year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[media_adr_1]' derivation='Sum' name='[sum:media_adr_1:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1xgobu91umqybw15oq1uq1dimdp8].[sum:media_adr_1:qk]' scope='rows' value='Media diaria Adr' />
+            <encoding attr='space' class='0' field='[federated.1xgobu91umqybw15oq1uq1dimdp8].[none:arrival_date_year:qk]' field-type='quantitative' major-origin='0' major-show='false' major-spacing='1.0' minor-origin='0' minor-show='false' minor-spacing='1.0' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.1xgobu91umqybw15oq1uq1dimdp8].[none:arrival_date_year:qk]' scope='cols' value='' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.1xgobu91umqybw15oq1uq1dimdp8].[none:arrival_date_month:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.1xgobu91umqybw15oq1uq1dimdp8].[sum:media_adr_1:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.1xgobu91umqybw15oq1uq1dimdp8].[sum:media_adr_1:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1xgobu91umqybw15oq1uq1dimdp8].[sum:media_adr_1:qk]</rows>
+        <cols>([federated.1xgobu91umqybw15oq1uq1dimdp8].[none:arrival_date_month:nk] * [federated.1xgobu91umqybw15oq1uq1dimdp8].[none:arrival_date_year:qk])</cols>
+      </table>
+      <simple-id uuid='{762479D4-6D43-4077-89A8-41F042348299}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name=' Candlestick chart adr City Hotel'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1xgobu91umqybw15oq1uq1dimdp8].[none:arrival_date_month:nk]</field>
+            <field>[federated.1xgobu91umqybw15oq1uq1dimdp8].[none:arrival_date_year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{660A1E82-CBE4-4491-A791-3AD52AB01A26}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name=' Candlestick chart adr City Hotel' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>

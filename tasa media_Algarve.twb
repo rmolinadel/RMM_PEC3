@@ -1,0 +1,367 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='adr_hotel_resort (adr_hotel_resort)' inline='true' name='federated.02wyyqy1d43aiv14glzrn1or8rjo' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='adr_hotel_resort' name='excel-direct.0uq4adm00gxzzl1dqoap31g1xdvu'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/ruben/Desktop/UOC/ASIGNATURAS OBLIGATORIAS/M2.859 - Visualización de datos/PEC3/adr_hotel_resort.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0uq4adm00gxzzl1dqoap31g1xdvu' name='adr_hotel_resort' table='[adr_hotel_resort$]' type='table'>
+          <columns gridOrigin='A1:D794:no:A1:D794:0' header='yes' outcome='6'>
+            <column datatype='integer' name='arrival_date_year' ordinal='0' />
+            <column datatype='string' name='arrival_date_month' ordinal='1' />
+            <column datatype='integer' name='arrival_date_day_of_month' ordinal='2' />
+            <column datatype='real' name='media_adr' ordinal='3' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[adr_hotel_resort]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:D794:no:A1:D794:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>arrival_date_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[arrival_date_year]</local-name>
+            <parent-name>[adr_hotel_resort]</parent-name>
+            <remote-alias>arrival_date_year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[adr!hotel!resort_EC196AE595504228A1B1EF9B4A4C3A97]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>arrival_date_month</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[arrival_date_month]</local-name>
+            <parent-name>[adr_hotel_resort]</parent-name>
+            <remote-alias>arrival_date_month</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[adr!hotel!resort_EC196AE595504228A1B1EF9B4A4C3A97]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>arrival_date_day_of_month</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[arrival_date_day_of_month]</local-name>
+            <parent-name>[adr_hotel_resort]</parent-name>
+            <remote-alias>arrival_date_day_of_month</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[adr!hotel!resort_EC196AE595504228A1B1EF9B4A4C3A97]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>media_adr</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[media_adr]</local-name>
+            <parent-name>[adr_hotel_resort]</parent-name>
+            <remote-alias>media_adr</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[adr!hotel!resort_EC196AE595504228A1B1EF9B4A4C3A97]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='adr_hotel_resort' datatype='table' name='[__tableau_internal_object_id__].[adr!hotel!resort_EC196AE595504228A1B1EF9B4A4C3A97]' role='measure' type='quantitative' />
+      <column caption='Arrival Date Day Of Month' datatype='integer' name='[arrival_date_day_of_month]' role='dimension' type='quantitative' />
+      <column caption='Arrival Date Month' datatype='string' name='[arrival_date_month]' role='dimension' type='nominal' />
+      <column caption='Arrival Date Year' datatype='integer' name='[arrival_date_year]' role='dimension' type='quantitative' />
+      <column caption='Media Adr' datatype='real' name='[media_adr]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;España&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='adr_hotel_resort' id='adr!hotel!resort_EC196AE595504228A1B1EF9B4A4C3A97'>
+            <properties context=''>
+              <relation connection='excel-direct.0uq4adm00gxzzl1dqoap31g1xdvu' name='adr_hotel_resort' table='[adr_hotel_resort$]' type='table'>
+                <columns gridOrigin='A1:D794:no:A1:D794:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='arrival_date_year' ordinal='0' />
+                  <column datatype='string' name='arrival_date_month' ordinal='1' />
+                  <column datatype='integer' name='arrival_date_day_of_month' ordinal='2' />
+                  <column datatype='real' name='media_adr' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name=' Candlestick chart adr Hotel Resort'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Calibri' fontsize='14'>Candlestick chart adr Hotel Resort</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='adr_hotel_resort (adr_hotel_resort)' name='federated.02wyyqy1d43aiv14glzrn1or8rjo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02wyyqy1d43aiv14glzrn1or8rjo'>
+            <column caption='Arrival Date Month' datatype='string' name='[arrival_date_month]' role='dimension' type='nominal' />
+            <column caption='Arrival Date Year' datatype='integer' name='[arrival_date_year]' role='dimension' type='quantitative' />
+            <column caption='Media Adr' datatype='real' name='[media_adr]' role='measure' type='quantitative' />
+            <column-instance column='[arrival_date_month]' derivation='None' name='[none:arrival_date_month:nk]' pivot='key' type='nominal' />
+            <column-instance column='[arrival_date_year]' derivation='None' name='[none:arrival_date_year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[media_adr]' derivation='Sum' name='[sum:media_adr:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.02wyyqy1d43aiv14glzrn1or8rjo].[none:arrival_date_year:qk]' scope='cols' value='' />
+            <encoding attr='space' class='0' field='[federated.02wyyqy1d43aiv14glzrn1or8rjo].[none:arrival_date_year:qk]' field-type='quantitative' major-origin='0' major-show='false' major-spacing='1.0' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.02wyyqy1d43aiv14glzrn1or8rjo].[sum:media_adr:qk]' scope='rows' value='Media diaria Adr' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <reference-line axis-column='[federated.02wyyqy1d43aiv14glzrn1or8rjo].[sum:media_adr:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.02wyyqy1d43aiv14glzrn1or8rjo].[sum:media_adr:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+                <format attr='mark-color' value='#4e79a7' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.02wyyqy1d43aiv14glzrn1or8rjo].[sum:media_adr:qk]</rows>
+        <cols>([federated.02wyyqy1d43aiv14glzrn1or8rjo].[none:arrival_date_month:nk] * [federated.02wyyqy1d43aiv14glzrn1or8rjo].[none:arrival_date_year:qk])</cols>
+      </table>
+      <simple-id uuid='{542C4247-1F86-4331-ABAC-0F7AFB7DD781}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name=' Candlestick chart adr Hotel Resort'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.02wyyqy1d43aiv14glzrn1or8rjo].[none:arrival_date_day_of_month:qk]</field>
+            <field>[federated.02wyyqy1d43aiv14glzrn1or8rjo].[none:arrival_date_month:nk]</field>
+            <field>[federated.02wyyqy1d43aiv14glzrn1or8rjo].[none:arrival_date_year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{CD6EF3A2-D13B-4193-9869-A777DB26206F}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name=' Candlestick chart adr Hotel Resort' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
