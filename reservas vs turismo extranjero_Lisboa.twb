@@ -1,0 +1,405 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='conteo_reserva_viajes_Lisboa (conteo_reserva_viajes_Lisboa)' inline='true' name='federated.18jo5hy1ooxc0c19th9631nxhckc' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='conteo_reserva_viajes_Lisboa' name='excel-direct.06hq5k71q54tt01d9ywy91n2qfpt'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/ruben/Desktop/UOC/ASIGNATURAS OBLIGATORIAS/M2.859 - Visualización de datos/PEC3/conteo_reserva_viajes_Lisboa.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.06hq5k71q54tt01d9ywy91n2qfpt' name='conteo_reserva_viajes_Lisboa' table='[conteo_reserva_viajes_Lisboa$]' type='table'>
+          <columns gridOrigin='A1:H27:no:A1:H27:0' header='yes' outcome='2'>
+            <column datatype='string' name='hotel' ordinal='0' />
+            <column datatype='integer' name='arrival_date_year' ordinal='1' />
+            <column datatype='string' name='arrival_date_month' ordinal='2' />
+            <column datatype='integer' name='Reservas' ordinal='3' />
+            <column datatype='string' name='zona' ordinal='4' />
+            <column datatype='integer' name='arrival_date_year 1' ordinal='5' />
+            <column datatype='string' name='arrival_date_month 1' ordinal='6' />
+            <column datatype='integer' name='Turistas' ordinal='7' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[conteo_reserva_viajes_Lisboa]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:H27:no:A1:H27:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hotel</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[hotel]</local-name>
+            <parent-name>[conteo_reserva_viajes_Lisboa]</parent-name>
+            <remote-alias>hotel</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[conteo!reserva!viajes!Lisboa_02046EABF1AD41FABF0CDFBFC9277AA4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>arrival_date_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[arrival_date_year]</local-name>
+            <parent-name>[conteo_reserva_viajes_Lisboa]</parent-name>
+            <remote-alias>arrival_date_year</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[conteo!reserva!viajes!Lisboa_02046EABF1AD41FABF0CDFBFC9277AA4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>arrival_date_month</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[arrival_date_month]</local-name>
+            <parent-name>[conteo_reserva_viajes_Lisboa]</parent-name>
+            <remote-alias>arrival_date_month</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[conteo!reserva!viajes!Lisboa_02046EABF1AD41FABF0CDFBFC9277AA4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Reservas</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Reservas]</local-name>
+            <parent-name>[conteo_reserva_viajes_Lisboa]</parent-name>
+            <remote-alias>Reservas</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[conteo!reserva!viajes!Lisboa_02046EABF1AD41FABF0CDFBFC9277AA4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>zona</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[zona]</local-name>
+            <parent-name>[conteo_reserva_viajes_Lisboa]</parent-name>
+            <remote-alias>zona</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[conteo!reserva!viajes!Lisboa_02046EABF1AD41FABF0CDFBFC9277AA4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>arrival_date_year 1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[arrival_date_year 1]</local-name>
+            <parent-name>[conteo_reserva_viajes_Lisboa]</parent-name>
+            <remote-alias>arrival_date_year 1</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[conteo!reserva!viajes!Lisboa_02046EABF1AD41FABF0CDFBFC9277AA4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>arrival_date_month 1</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[arrival_date_month 1]</local-name>
+            <parent-name>[conteo_reserva_viajes_Lisboa]</parent-name>
+            <remote-alias>arrival_date_month 1</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[conteo!reserva!viajes!Lisboa_02046EABF1AD41FABF0CDFBFC9277AA4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Turistas</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Turistas]</local-name>
+            <parent-name>[conteo_reserva_viajes_Lisboa]</parent-name>
+            <remote-alias>Turistas</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[conteo!reserva!viajes!Lisboa_02046EABF1AD41FABF0CDFBFC9277AA4]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='conteo_reserva_viajes_Lisboa' datatype='table' name='[__tableau_internal_object_id__].[conteo!reserva!viajes!Lisboa_02046EABF1AD41FABF0CDFBFC9277AA4]' role='measure' type='quantitative' />
+      <column caption='Arrival Date Month 1' datatype='string' name='[arrival_date_month 1]' role='dimension' type='nominal' />
+      <column caption='Arrival Date Month' datatype='string' name='[arrival_date_month]' role='dimension' type='nominal' />
+      <column caption='Arrival Date Year 1' datatype='integer' name='[arrival_date_year 1]' role='dimension' type='quantitative' />
+      <column caption='Arrival Date Year' datatype='integer' name='[arrival_date_year]' role='dimension' type='quantitative' />
+      <column caption='Hotel' datatype='string' name='[hotel]' role='dimension' type='nominal' />
+      <column caption='Zona' datatype='string' name='[zona]' role='dimension' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;España&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='conteo_reserva_viajes_Lisboa' id='conteo!reserva!viajes!Lisboa_02046EABF1AD41FABF0CDFBFC9277AA4'>
+            <properties context=''>
+              <relation connection='excel-direct.06hq5k71q54tt01d9ywy91n2qfpt' name='conteo_reserva_viajes_Lisboa' table='[conteo_reserva_viajes_Lisboa$]' type='table'>
+                <columns gridOrigin='A1:H27:no:A1:H27:0' header='yes' outcome='2'>
+                  <column datatype='string' name='hotel' ordinal='0' />
+                  <column datatype='integer' name='arrival_date_year' ordinal='1' />
+                  <column datatype='string' name='arrival_date_month' ordinal='2' />
+                  <column datatype='integer' name='Reservas' ordinal='3' />
+                  <column datatype='string' name='zona' ordinal='4' />
+                  <column datatype='integer' name='arrival_date_year 1' ordinal='5' />
+                  <column datatype='string' name='arrival_date_month 1' ordinal='6' />
+                  <column datatype='integer' name='Turistas' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Hoja 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Turistas vs reservas en City Hotel</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='conteo_reserva_viajes_Lisboa (conteo_reserva_viajes_Lisboa)' name='federated.18jo5hy1ooxc0c19th9631nxhckc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.18jo5hy1ooxc0c19th9631nxhckc'>
+            <column datatype='integer' name='[Reservas]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Turistas]' role='measure' type='quantitative' />
+            <column-instance column='[Reservas]' derivation='Sum' name='[sum:Reservas:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Turistas]' derivation='Sum' name='[sum:Turistas:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='false' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+          </pane>
+        </panes>
+        <rows>[federated.18jo5hy1ooxc0c19th9631nxhckc].[sum:Reservas:qk]</rows>
+        <cols>[federated.18jo5hy1ooxc0c19th9631nxhckc].[sum:Turistas:qk]</cols>
+      </table>
+      <simple-id uuid='{9A725C28-7380-447A-8A70-47E54B415F48}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Hoja 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BE0AA18D-73FC-4480-A45F-CE0C6D04AD00}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Hoja 1' width='192'>
+      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
+      TkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
